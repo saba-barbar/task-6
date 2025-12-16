@@ -1,0 +1,63 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>CRUD</title>
+    </head>
+    <body>
+        <div class="crud">
+            <header>
+                <nav>
+                    <h1>Dashbord</h1>
+                    <button class="btn"><a href="index.html">Admin</a></button>
+                </nav>
+                <div class="hero"></div>
+            </header>
+            <div class="bord"></div>
+            <main>
+                <div class="inputs">
+                    <input type="text" placeholder="title" id="title">
+                    <div class="price">
+                        <input type="number" placeholder="price" id="price"
+                            onkeyup="getTotal()">
+                        <input type="number" placeholder="discount"
+                            id="discount"
+                            onkeyup="getTotal()">
+                        <div class="small" id="total"></div>
+                    </div>
+                    <input type="text" placeholder="category" id="category">
+                    <input type="text" id="img" placeholder="Image URL">
+                    <button class="btn" id="submit">Create</button>
+                </div>
+                <div class="outputs">
+                    <div class="searchBlock">
+                        <input onkeyup="searchName(this.value)" type="text"
+                            placeholder="search" id="search1">
+                        <!-- <div class="btnSearch">
+                    <button onclick="getSearchMood(this.id)" id="searchTitle" class="btn">Search By Title</button>
+                </div> -->
+                    </div>
+                    <div id="deletAll"></div>
+                    <table>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>discount</th>
+                            <th>total</th>
+                            <th>category</th>
+                            <th>photo</th>
+                            <th>update</th>
+                            <th>delet</th>
+                        </tr>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+        <div class="addProductForm"></div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

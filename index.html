@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>task#6</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>shope</h1>
+                <button class="btn"><a href="dashbord.html">Admin</a></button>
+            </nav>
+            <div class="hero"></div>
+        </header>
+        <div class="bord"></div>
+        <main>
+            <section class="searchSection">
+                <input onkeyup="searchData(this.value)" type="text"
+                    placeholder="Search By Title" id="search">
+                <div class="button">
+                    <div class="filtrCategory">
+                        <button onclick="" class="filter btn" id="all">All</button>
+                        <button class="filter btn" id="mobile">Mobiles</button>
+                    </div>
+                    <div>
+                        <button class="filter btn" id="laptops">Laptops</button>
+                        <select class="sort btn">
+                            <option value="default">Sort Price</option>
+                            <option value="asc">Low to High</option>
+                            <option value="desc">High to Low</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section class="productSliders">
+                <div class="slider">
+                    <div class="card" id="productsContainer">
+                        <!-- <div class="slide">
+                            <img src="./assets/img/laptop1.jpg" alt>
+                            <div>
+                                <h2>Lenovo</h2>
+                                <h4>180$</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/mobile4.jpg" alt>
+                            <div>
+                                <h2></h2>
+                                <h4>500%</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/laptop3.jpg" alt>
+                            <div>
+                                <h2>HP</h2>
+                                <h4>150$</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/mobile3.jpg" alt>
+                            <div>
+                                <h2>laptop</h2>
+                                <h4>500%</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/mobile1.jpg" alt>
+                            <div>
+                                <h2>laptop</h2>
+                                <h4>500%</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/laptop1.jpg" alt>
+                            <div>
+                                <h2>laptop</h2>
+                                <h4>500%</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/mobile4.jpg" alt>
+                            <div>
+                                <h2>laptop</h2>
+                                <h4>500%</h4>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="slidebtn">
+                        <button id="prev">⟵</button>
+                        <button id="next">⟶</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div id="productsContainer"></div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
